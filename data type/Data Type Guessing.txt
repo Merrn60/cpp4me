@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+int main()
+{
+    double a, k, n; //خد بالك
+
+    //−2147483648,2147483647
+    //خد الارقام بالترتيب
+    cin >> n >> k >> a;
+    double x = (k * n) / a;
+    
+    long long y = x;
+    double z = x -  y;
+    if (z>0 ) {
+        cout << "double";
+    }
+    else if (x > 2147483647) {
+        cout << "long long";
+    }
+    else {
+        cout << "int";
+    }
+
+
+}

@@ -1,0 +1,42 @@
+#include <iostream>
+#include <iomanip>
+ 
+ 
+using namespace std;
+
+int main()
+{
+    /*arithmetic operators (+,−,×) between the other three numbers; so that each operator is used only once. a□b□c=d*/
+
+
+    long long a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    if (a + b - c == d) {
+        cout << "YES";
+    }
+
+
+    else if (a + b * c == d) {
+        cout << "YES";
+    }
+
+    else if (a - b * c == d) {
+        cout << "YES";
+    }
+    else if (a - b + c == d) {
+        cout << "YES";
+    }
+
+    else if (a * b + c == d) {
+        cout << "YES";
+    }
+    else if (a * b-c == d) {
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
+    }
+
+}
+ 

@@ -1,0 +1,40 @@
+#include <iostream>
+#include <iomanip>
+ 
+ 
+using namespace std;
+
+int main()
+{
+/*فكره الحل انه تفضل تعد علي اصابعك الاحتمالات ممكن ابدا حل من رقم زوجي ,او ابدا من رقم فردي واشوف الحالات*/
+	/*a odd numbers
+	and b even numbers,*/
+
+	long long a, b;
+	cin >> a >> b;
+
+
+	if (a == 0 && b == 0) {
+		cout << "NO";
+	  }
+	else {
+
+
+
+		if (a == b)
+		{
+			cout << "YES";
+		}
+		else if (a == b + 1) {
+			cout << "YES";
+		}
+		else if (b == a + 1) {
+			cout << "YES";
+		}
+
+		else {
+			cout << "NO";
+		}
+	}
+}
+ 

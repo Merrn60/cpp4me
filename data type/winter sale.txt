@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+/* مهمه لتشتغل setprecision*/
+ 
+ 
+using namespace std;
+
+int main()
+{
+	float d, p;
+	cin >> p >> d;
+	float ori = (100 * d) / (100 - p);
+
+	cout << fixed<<setprecision(2) << ori;
+}
+ 

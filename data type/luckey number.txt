@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+ 
+ 
+using namespace std;
+
+int main()
+{ 
+/* %10 تضمن رقم
+ /10 تطير رقم*/
+    int x;
+    cin >> x;
+     
+
+    if ((x % 10) % ((x % 100) / 10) == 0 || ((x % 100) / 10) % (x % 10) == 0) {
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
+    }
+
+
+
+}
+ 
